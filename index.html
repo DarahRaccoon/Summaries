@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resúmenes Biotecnología | [Tu Nombre]</title>
+    
+    <!-- Metaetiquetas para SEO y presentación en redes -->
+    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de biotecnología. Recurso abierto para estudiantes y docentes bajo licencia CC BY-SA 4.0.">
+    <meta name="author" content="[Tu Nombre]">
+    <meta property="og:title" content="Resúmenes de Biotecnología">
+    <meta property="og:description" content="Material de estudio colaborativo y de acceso abierto">
+    <meta property="og:type" content="website">
+    
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon (opcional, puedes generar uno en https://favicon.io) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Font Awesome para iconos (versión gratuita) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado con navegación -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>🧬 <span class="logo-text">BioResúmenes</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#resumenes">Resúmenes</a></li>
+                    <li><a href="#como-ayudar">Colaborar</a></li>
+                    <li><a href="#licencia">Licencia</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de inicio con presentación -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Resúmenes de Biotecnología</h2>
+                    <p class="hero-subtitle">Material de estudio abierto, colaborativo y en constante mejora</p>
+                    <p>Este proyecto nace para recopilar, completar y compartir resúmenes de las asignaturas de la carrera. 
+                       Todo el contenido está creado en LaTeX y disponible para su descarga gratuita.</p>
+                    <div class="hero-buttons">
+                        <a href="#resumenes" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i> Ver resúmenes
+                        </a>
+                        <a href="#como-ayudar" class="btn btn-secondary">
+                            <i class="fas fa-hand-holding-heart"></i> Cómo colaborar
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-flask fa-8x"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de resúmenes disponibles -->
+        <section id="resumenes" class="resumenes">
+            <div class="container">
+                <h2 class="section-title">📚 Resúmenes disponibles</h2>
+                <p class="section-subtitle">Haz clic en cada asignatura para acceder a la carpeta de Google Drive</p>
+                
+                <!-- Tarjetas de asignaturas -->
+                <div class="cards-grid">
+                    <!-- Bioquímica -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Bioquímica</h3>
+                        <p class="card-version">Versión actual: v2.3</p>
+                        <p class="card-updated">Actualizado: 15/03/2024</p>
+                        <p class="card-desc">Estructura de biomoléculas, metabolismo, enzimología y regulación.</p>
+                        <div class="card-footer">
+                            <span class="badge">9 capítulos</span>
+                            <a href="URL_DE_TU_CARPETA_DRIVE_BIOQUIMICA" class="btn-card" target="_blank">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Microbiología -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-virus"></i>
+                        </div>
+                        <h3>Microbiología</h3>
+                        <p class="card-version">Versión actual: v1.5</p>
+                        <p class="card-updated">Actualizado: 02/03/2024</p>
+                        <p class="card-desc">Bacterias, virus, hongos, técnicas de cultivo y esterilización.</p>
+                        <div class="card-footer">
+                            <span class="badge">7 capítulos</span>
+                            <a href="URL_DE_TU_CARPETA_DRIVE_MICROBIOLOGIA" class="btn-card" target="_blank">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Biología Molecular -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Biología Molecular</h3>
+                        <p class="card-version">Versión actual: v1.2</p>
+                        <p class="card-updated">Actualizado: 10/02/2024</p>
+                        <p class="card-desc">Replicación, transcripción, traducción, técnicas de biología molecular.</p>
+                        <div class="card-footer">
+                            <span class="badge">6 capítulos</span>
+                            <a href="URL_DE_TU_CARPETA_DRIVE_BIO_MOL" class="btn-card" target="_blank">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Genética -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Genética</h3>
+                        <p class="card-version">Versión actual: v1.0</p>
+                        <p class="card-updated">Actualizado: 20/01/2024</p>
+                        <p class="card-desc">Herencia mendeliana, poblaciones, genética molecular y de microorganismos.</p>
+                        <div class="card-footer">
+                            <span class="badge">5 capítulos</span>
+                            <a href="URL_DE_TU_CARPETA_DRIVE_GENETICA" class="btn-card" target="_blank">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Más asignaturas (puedes añadir tantas como necesites) -->
+                    <div class="card card-placeholder">
+                        <div class="card-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <h3>Próximamente</h3>
+                        <p>Nuevas asignaturas en preparación</p>
+                        <p class="card-note">¿Quieres alguna en especial? <br>¡Házmelo saber!</p>
+                    </div>
+                </div>
+                
+                <!-- Enlace directo a la carpeta principal de Drive -->
+                <div class="drive-link">
+                    <p><i class="fas fa-folder-open"></i> ¿Prefieres ver todo el contenido directamente?</p>
+                    <a href="URL_DE_TU_CARPETA_PRINCIPAL_DRIVE" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-google-drive"></i> Acceder a carpeta completa en Google Drive
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de novedades y actualizaciones -->
+        <section id="novedades" class="novedades">
+            <div class="container">
+                <h2 class="section-title">✨ Novedades y actualizaciones</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">15/03/2024</div>
+                        <div class="timeline-content">
+                            <h4>Bioquímica v2.3 publicada</h4>
+                            <p>¡Gracias a María González por corregir el mecanismo de la glucólisis (Issue #12)! Se ha añadido un nuevo diagrama en TikZ del ciclo de Krebs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">02/03/2024</div>
+                        <div class="timeline-content">
+                            <h4>Microbiología v1.5 disponible</h4>
+                            <p>Revisada la sección de esterilización por autoclave. Nuevas figuras de curvas de crecimiento bacteriano generadas con Python.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">10/02/2024</div>
+                        <div class="timeline-content">
+                            <h4>Nuevo resumen: Biología Molecular v1.0</h4>
+                            <p>Primera versión publicada. Incluye capítulos de replicación y transcripción. ¡Espero vuestros comentarios!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de cómo ayudar / retroalimentación -->
+        <section id="como-ayudar" class="como-ayudar">
+            <div class="container">
+                <h2 class="section-title">💬 ¿Cómo ayudar a mejorar estos resúmenes?</h2>
+                <p class="section-subtitle">Tus comentarios, correcciones y sugerencias son bienvenidos por el medio que te sea más cómodo</p>
+                
+                <div class="feedback-grid">
+                    <!-- Opción 1: Formulario (recomendada) -->
+                    <div class="feedback-card">
+                        <div class="feedback-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>📝 Formulario anónimo</h3>
+                        <p>Para correcciones puntuales, sugerencias rápidas o reportar errores. Es la opción más sencilla y no requiere cuenta.</p>
+                        <a href="URL_DE_TU_GOOGLE_FORM" class="btn-feedback" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Acceder al formulario
+                        </a>
+                    </div>
+                    
+                    <!-- Opción 2: Comentarios en PDF -->
+                    <div class="feedback-card">
+                        <div class="feedback-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>💬 Comentarios en PDF</h3>
+                        <p>Abre cualquier PDF en Google Drive, selecciona el texto y añade un comentario. Me llegará una notificación directamente.</p>
+                        <p class="feedback-note"><i class="fas fa-info-circle"></i> Necesitas cuenta de Google (la institucional funciona).</p>
+                    </div>
+                    
+                    <!-- Opción 3: Correo electrónico -->
+                    <div class="feedback-card">
+                        <div class="feedback-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>📧 Correo electrónico</h3>
+                        <p>Si tienes un documento (Word, Google Docs, texto) con una corrección extensa o una ampliación, envíamelo y lo integraré en LaTeX.</p>
+                        <p><strong>tu.email@universidad.edu</strong></p>
+                    </div>
+                    
+                    <!-- Opción 4: GitHub (avanzado) -->
+                    <div class="feedback-card">
+                        <div class="feedback-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>🐙 GitHub (Issues y Pull Requests)</h3>
+                        <p>Si tienes cuenta de GitHub, puedes reportar errores públicamente (Issues) o incluso proponer cambios directamente (Pull Requests).</p>
+                        <div class="feedback-buttons">
+                            <a href="URL_DE_TUS_ISSUES" class="btn-feedback small" target="_blank">
+                                <i class="fas fa-bug"></i> Issues
+                            </a>
+                            <a href="URL_DE_TU_REPO" class="btn-feedback small" target="_blank">
+                                <i class="fas fa-code-branch"></i> Repositorio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nota sobre asesoría -->
+                <div class="asesoria-box">
+                    <i class="fas fa-question-circle fa-2x"></i>
+                    <div>
+                        <h4>❓ ¿Necesitas ayuda con GitHub o LaTeX?</h4>
+                        <p>Si te interesa contribuir por los canales de GitHub pero no sabes cómo empezar, <strong>escríbeme sin problema</strong>. Puedo darte una mini-asesoría para que te animes. La idea es que entre todos construyamos algo cada vez mejor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de licencia -->
+        <section id="licencia" class="licencia">
+            <div class="container">
+                <h2 class="section-title">⚖️ Licencia</h2>
+                <div class="licencia-content">
+                    <div class="licencia-icon">
+                        <i class="fab fa-creative-commons fa-3x"></i>
+                        <i class="fab fa-creative-commons-by fa-3x"></i>
+                        <i class="fab fa-creative-commons-sa fa-3x"></i>
+                    </div>
+                    <div class="licencia-text">
+                        <p>Este trabajo está bajo una <strong>licencia CC BY-SA 4.0 (Atribución-CompartirIgual 4.0 Internacional)</strong>.</p>
+                        <p><strong>Eres libre de:</strong></p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <strong>Compartir</strong> — copiar y redistribuir el material en cualquier medio o formato.</li>
+                            <li><i class="fas fa-check"></i> <strong>Adaptar</strong> — remezclar, transformar y construir a partir del material para cualquier propósito, incluso comercial.</li>
+                        </ul>
+                        <p><strong>Bajo las siguientes condiciones:</strong></p>
+                        <ul>
+                            <li><i class="fas fa-asterisk"></i> <strong>Atribución</strong> — Debes reconocer la autoría de forma adecuada.</li>
+                            <li><i class="fas fa-asterisk"></i> <strong>CompartirIgual</strong> — Si remezclas, transformas o creas a partir del material, debes distribuir tu contribución bajo la misma licencia.</li>
+                        </ul>
+                        <p>Más información en <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Creative Commons</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto / redes -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contacto-content">
+                    <p>¿Dudas, sugerencias o simplemente quieres decir hola? Puedes encontrarme en:</p>
+                    <div class="contacto-links">
+                        <a href="mailto:tu.email@universidad.edu" class="contacto-item">
+                            <i class="fas fa-envelope"></i> Correo institucional
+                        </a>
+                        <a href="URL_DE_TU_PERFIL_GITHUB" class="contacto-item" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <!-- Añade más si quieres: LinkedIn, Twitter, etc. -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>© 2024 [Tu Nombre] · Estudiante de Biotecnología</p>
+                <p>Resúmenes creados con ♥ y LaTeX · Código fuente en <a href="URL_DE_TU_REPO" target="_blank">GitHub</a></p>
+            </div>
+            <div class="footer-licence">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
