@@ -93,21 +93,21 @@ a:hover {
 
 .btn-primary:hover {
     background-color: var(--color-gray);
-    color: var(--color-text);
+    color: var(--color-primary);
     box-shadow: var(--shadow-md);
-    border-color: var(--color-primary);
-        transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--color-primary);
-    border-color: var(--color-primary);
+    color: var(--color-gray);
+    border-color: var(--color-gray);
 }
 
 .btn-secondary:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+    background-color: var(--color-gray);
+    color: var(--color-primary);
+    border-color: var(--color-gray);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -187,7 +187,10 @@ nav a:hover::after {
 
 .hero {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #f0f7f0, #e8f0e8);
+    background-image: url(resources/images/hero_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .hero .container {
@@ -198,12 +201,13 @@ nav a:hover::after {
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 75%px;
+    color: var(--color-gray);
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: var(--color-text-light);
+    color: var(--color-gray);
     margin-bottom: 1.5rem;
 }
 
@@ -503,8 +507,11 @@ nav a:hover::after {
 }
 
 .btn-feedback:hover {
-    background-color: var(--color-primary-light);
-    color: var(--color-white);
+    background-color: var(--color-gray);
+    color: var(--color-primary);
+    border-style: solid;
+    border-width: 1pt;
+    border-color: var(--color-primary);
 }
 
 .feedback-buttons {
