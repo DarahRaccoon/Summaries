@@ -1,17 +1,50 @@
-\section{Métodos de medición}
+\section{Variables para medir actividad enzimática}
 
-\subsection{Directo}
+Existen diferentes variables que se pueden medir de una reacción para de terminar su velocidad:
 
-Este tipo de medición se realiza cuando puede existir una medición directa de alguno de los siguientes aspectos:
+\begin{itemize}
+    \item Sustrato
+    \item Producto
+        \begin{itemize}
+            \item Por ejemplo, aquí se podría medir la absorbancia del producto ($O$), cuyo valor, al cambiar en el tiempo, se puede usar para determinar la cinética de la reacción.
+                \begin{align*}
+                H_2O_2 + OH_2 &\Longrightarrow 2H_20 + O
+                \\
+                O \lambda &= 440nm
+                \end{align*}
+        \end{itemize}
+    \item Cofactor
+        \begin{itemize}
+            \item En este ejemplo, tanto el $NAD^+$ como el $NADH$ funcionan como cofactores, y se pueden usar como elementos a medir para determinar la cinética de la reacción.
+                \begin{align*}
+                SH_2 + NAD^{+} &\Longrightarrow NADH + H^{+} + S
+                \\
+                NADH \lambda &= 340nm
+                \\
+                \\
+                SH_2 + NADH &\Longrightarrow NAD^{+} + SH_2
+                \\
+                NAD^{+} \lambda &= 254NM
+                \end{align*}
+                
+        \end{itemize}
+    \item Reacción enzimática acoplada
+    \item Reacción química acoplada
+\end{itemize}
+
+
+\section{Métodos de medición de actividad enzimática}
+
+Existen diversas 2 formas de medir la actividad de una enzima: de manera directa y de manera indirecta
+
+La primera se utiliza cuando es posible realizar una medición de alguno de los siguientes aspectos:
 
 \begin{itemize}
     \item La disminución del sustrato conforme avanza la reacción.
     \item La acumulación del producto conforme avanza la reacción.
 \end{itemize}
 
-\subsection{Indirecto}
-
-Este tipo de medición se realiza cuando NO puede existir una medición directa de alguno de los siguientes aspectos:
+Por otro lado, el método indirecto se realiza cuando no puede existir una medición directa de alguno de los siguientes aspectos:
 
 \begin{itemize}
     \item Ni sustrato
@@ -23,26 +56,15 @@ Para realizar este tipo de medición se pueden realizar las siguientes operacion
 
 \begin{itemize}
     \item Medir el consumo de cofactor
-    \item Usar una reacción acoplada que si se pueda medir.
-        \begin{enumerate}
-            \item Esta puede ser una reacción:
-                \begin{itemize}
-                    \item Enzimática
-                    \item Química
-                \end{itemize}
-                
-            \item Esta operación necesita de lo siguiente:
-                \begin{itemize}
-                    \item Especificidad
-                    \item Muestras de control
-                \end{itemize}
-        \end{enumerate}
+    
+    \item Usar una reacción acoplada que si se pueda medir. Esta puede ser una reacción enzimática o química y necesita de especificidad y muestras de control.
+\end{itemize}
 
-    \item En base a la medición del tiempo. Las mediciones también se pueden clasificar en base a qué medida de tiempo se utilize:
-        \begin{itemize}
-            \item A tiempo final: En esta se establece un tiempo determinado y se mide unicamente en $t_i$ y $t_f$. Por ejemplo, dada una reacción con durción de 10 minutos, solo se mediría en el minuto 0 (al inicio) y al minuto 10 (al final).
-            \item Cinética: En esta se establece una unidad de tiempo que determina la periodicidad con que se medirá la reacción. Por ejemplo, medir cada 30 segundos. 
-        \end{itemize}
+Las mediciones también se pueden clasificar en base a qué medida de tiempo se utilize:
+
+\begin{itemize}
+    \item A tiempo final: En esta se establece un tiempo determinado y se mide unicamente en $t_i$ y $t_f$. Por ejemplo, dada una reacción con durción de 10 minutos, solo se mediría en el minuto 0 (al inicio) y al minuto 10 (al final).
+    \item Cinética: En esta se establece una unidad de tiempo que determina la periodicidad con que se medirá la reacción. Por ejemplo, medir cada 30 segundos. 
 \end{itemize}
 
 \section{Uso de espectrofotómetro}
@@ -51,45 +73,16 @@ Para realizar este tipo de medición se pueden realizar las siguientes operacion
     A = \varepsilon b C
 \end{equation}
 
-\subsection{Elementos a medir}
+Donde:
 
-Existen diferentes elementos que se pueden medir de una reacción:
+\begin{itemize}
+    \item $A$ = Absorbancia (Luz absorbida)
+    \item $\varepsilon$ = Absortividad (Capacidad de la sustancia para absorber luz) 
+    \item $b$ = Longitud de la celda
+    \item $C$ = Concentración de la solución
+\end{itemize}
 
-De sustrato
-
-De producto
-
-Por ejemplo, aquí se medirá la absorbancia del producto ($O$), cuyo valor, al cambiar en el tiempo, se puede usar para determinar la cinética de la reacción.
- 
-\begin{align}
-    H_2O_2 + OH_2 &\Longrightarrow 2H_20 + O
-    \\
-    \\
-    O \lambda &= 440nm
-\end{align}
-
-De cofactor
-
-En este ejemplo tanto el $NAD^+$ como el $NADH$ funcionan como cofactores, y se pueden usar como elementos a medir para determinar la cinética de la reacción.
-
-\begin{align}
-    SH_2 + NAD^{+} &\Longrightarrow NADH + H^{+} + S
-    \\
-    \hline
-    NADH \lambda &= 340nm
-    \\
-    \\
-    SH_2 + NADH &\Longrightarrow NAD^{+} + SH_2
-    \\
-    \hline
-    NAD^{+} \lambda &= 254NM
-\end{align}
-
-De reacción enzimática acoplada
-
-De reacción química acoplada
-
-Ejemplo - Producción de melanina
+\section{Ejemplo - Producción de melanina}\footnote{PENDIENTE DE MEJORA}
 
 \begin{align}
     \text{Tirosina} + \text{Tirosinasa (PPO)} + O_2 + Cu^{2+} &\Longrightarrow \text{Tirosina Oxidada} + DOPA + H_2O

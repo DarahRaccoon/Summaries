@@ -1,0 +1,37 @@
+\section{Factores que afectan la velocidad de reacción}
+
+Existen diversos parámetros que pueden afectar la velocidad con la que ocurre una reacción enzimática.
+
+\subsection{Aspectos fisico-químicos}
+
+Puesto que las enzimas son al final del día proteínas, debemos recordar las variables que pueden desnaturalizar una proteína, pues también afectan a las enzimas. Las principales variables son la temperatura y el pH. Hay que recordar también que estas variables cambian de enzima a enzima. Por ejemplo, mientras que cierta enzimas si pueden funcionar a temperaturas altas, existen otras que no, y viceversa. Otro punto a tomar en cuenta es que no se trata de estados de ``encendido y apagado''. Por ejemplo, una enzima que funciona a temperatura ambiente no perderá actividad de manera abrupta cuando se suba la temperatura, sino que irá perdiendo poco a poco la actividad conforme se va subiendo la temperatura.
+
+Por todo esto, cada vez que exista una enzima que sea de nuestro interés es necesario conocer este tipo de parámetros, para poder mantener, por ejemplo, nuestro biorreactor, a las condiciones óptimas de funcionamiento de nuestra enzima.
+
+\subsection{Inhibidores}
+
+Existen sustancias que pueden reducir la velocidad de reacción al ``bloquear'' el funcionamiento correcto de la enzima. Estos se pueden clasificar de la siguiente manera:
+
+\begin{itemize}
+    \item Competitivos: Se unen al sitio catalítico y acaparan el lugar donde el sustrato entraría. Una forma de compensar la reducción de velocidad por estos inhibidores es añadir sustrato, para que ``le ganen el lugar'' al inhibidor.
+    \item No competitivos: Estos se unen a otras partes de la enzima que desactivan el sitio catalítico, por lo que aunque el sustrato si se puede unir, la reacción no se lleva a cabo. Añadir sustrato no funciona aquí.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{images/inh-comp.jpg}
+            \caption{\textbf{Competitivo:} Aquí se muestra como el inhibidor toma lugar en el sitio activo, bloqueando la entrada del sustrato}
+        \end{subfigure}
+    \hspace{0.5cm}
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{images/inh-no-comp.jpg}
+            \caption{\textbf{No competitivo:} A diferencia del anterior, el sustrato si se une, pero no se lleva a cabo la reacción porque el inhibidor "bloquea" el trabajo del sitio activo.}
+        \end{subfigure}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/graphs.jpg}
+    \caption{Efecto de diferentes tipos de inhibidores en las gráficas de linearización por método de Lieneawever-Burk}
+\end{figure}
