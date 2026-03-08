@@ -399,7 +399,6 @@ a {
 /* ===== HERO - Componente específico pero parametrizable ===== */
 .hero {
     padding: 4rem 0;
-    background-image: url(resources/images/hero_background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -439,7 +438,7 @@ a {
 .hero__subtitle {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
-    opacity: 0.9;
+    font-weight: 400;
 }
 
 .hero__image {
@@ -495,8 +494,11 @@ a {
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
     background-color: var(--color-gray);
+    color: var(--color-primary);
+    border: 2px;
     border-radius: 50px;
-    color: var(--color-text);
+    border-style: solid;
+    border-color: var(--color-primary);
     transition: all 0.3s ease;
 }
 
