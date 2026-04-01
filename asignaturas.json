@@ -1,0 +1,40 @@
+{
+  "asignaturas": [
+    {
+      "id": "1-quimica-inorganica",
+      "nombre": "Química inorgánica",
+      "cuatrimestre": 1,
+      "icono": "fa-atom",
+      "descripcion": "PROXIMAMENTE",
+      "rutaResumen": "./resúmenes/1-Química_inorgánica/0_Main.pdf",
+      "rutaPagina": "./asignaturas/1-química_inorgánica.html"
+    },
+    {
+      "id": "1-quimica-organica",
+      "nombre": "Química orgánica",
+      "cuatrimestre": 1,
+      "icono": "fa-flask",
+      "descripcion": "PROXIMAMENTE",
+      "rutaResumen": "./resúmenes/1-Química_orgánica/0_Main.pdf",
+      "rutaPagina": "./asignaturas/1-química_orgánica.html"
+    },
+    {
+      "id": "4-biologia-molecular",
+      "nombre": "Biología molecular",
+      "cuatrimestre": 4,
+      "icono": "fa-dna",
+      "descripcion": "PROXIMAMENTE",
+      "rutaResumen": "./resúmenes/4-Biología_molecular/0_Main.pdf",
+      "rutaPagina": "./asignaturas/4-biología_molecular.html"
+    },
+    {
+      "id": "4-tecnologia-enzimatica",
+      "nombre": "Tecnología enzimática",
+      "cuatrimestre": 4,
+      "icono": "fa-bolt",
+      "descripcion": "PROXIMAMENTE",
+      "rutaResumen": "./resúmenes/4-Tecnología enzimática/0_Main.pdf",
+      "rutaPagina": "./asignaturas/4-tecnología_enzimática.html"
+    }
+  ]
+}

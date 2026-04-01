@@ -1,0 +1,621 @@
+.
+├── .git
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── info
+│   │   ├── exclude
+│   │   └── refs
+│   ├── logs
+│   │   ├── refs
+│   │   │   ├── heads
+│   │   │   │   └── main
+│   │   │   └── remotes
+│   │   │       └── origin
+│   │   │           ├── HEAD
+│   │   │           └── main
+│   │   └── HEAD
+│   ├── objects
+│   │   ├── 01
+│   │   │   └── 367c928c917a03386c70a6b24103b9e8445f30
+│   │   ├── 02
+│   │   │   └── 0794485451a2e879e4f03b12de69b8818cbf16
+│   │   ├── 03
+│   │   │   └── a35b00eb13ef756e24887276119dd918c99d7d
+│   │   ├── 04
+│   │   │   ├── 276228289743e367e27c088342bb4e173ee20e
+│   │   │   ├── 93e068d42caac44ea4d3936411cd99eda37fa6
+│   │   │   └── cae0ffeaf2c12eaeb9e6842b2530dd12c48c58
+│   │   ├── 06
+│   │   │   └── ccdfe0e5e3c3c9e7925df7f6db6aa8b5c4c468
+│   │   ├── 08
+│   │   │   └── dc085af86e426aa031e871a8764690b47723a3
+│   │   ├── 09
+│   │   │   └── 6e67997abda5b934c385caa73e074f88beedfe
+│   │   ├── 0c
+│   │   │   └── 5ed5a42401f76b3122e53f3b14ef7cc8a77dfc
+│   │   ├── 0e
+│   │   │   └── 0ee21dfa9165971b43a970e00916d877131ce8
+│   │   ├── 10
+│   │   │   ├── 62a481e9f929aad426792e67a3bab995a92824
+│   │   │   └── 89c94dfe48a507741d8053c26ae5215746532f
+│   │   ├── 15
+│   │   │   └── e2e3be4d13f918ea2240b80ffd04ae757303a2
+│   │   ├── 16
+│   │   │   └── 617f0316c9c7b21a9db10d4fc9628d94993eed
+│   │   ├── 1b
+│   │   │   ├── 76b1730457cf7797f570701884d58b5c18df5f
+│   │   │   └── c902c9fa0b196d170b171a359dbe78e1f28f18
+│   │   ├── 1c
+│   │   │   └── 090495f04c7de793c32a3eedf26a71ad7a57a8
+│   │   ├── 1f
+│   │   │   └── 175b8882fff19636d780acbf4d68ef3c26c051
+│   │   ├── 25
+│   │   │   └── 52548544b5dd55e4ee5e0d68067a3bc5febb76
+│   │   ├── 26
+│   │   │   ├── 77769360029853f84feccc6fae35937cc0aea9
+│   │   │   └── eda6b73a1747af846773197515b7eee6a1bea7
+│   │   ├── 27
+│   │   │   └── 2d6cb52e026fc487fb1505497a46e34ad94ee3
+│   │   ├── 2b
+│   │   │   ├── 163e0a4bc6572ad68b379bef71efc33b986a57
+│   │   │   └── d345df9c8003b9db30d20837109e76d28e6cf0
+│   │   ├── 2d
+│   │   │   └── ab6416decc0feb17803f318ff9ee391ca28d56
+│   │   ├── 2f
+│   │   │   └── d90b24b2df3328ea2c78744eeaa80027a85c66
+│   │   ├── 30
+│   │   │   └── 3deadd3fc10557735bc5858e7400f733a013dd
+│   │   ├── 33
+│   │   │   └── 2795f3e798d76bd5db6c9e008e4cb26bac1b65
+│   │   ├── 34
+│   │   │   └── 1848c3db49352b08030098a8801ebcb81cb072
+│   │   ├── 37
+│   │   │   ├── 2def027473a20533a50328119d212a633e7c47
+│   │   │   └── 5da30d1b6e537ec29d7abfbc1524fb8367a5b9
+│   │   ├── 38
+│   │   │   ├── 0e8b94d443b02c2d9a7b38d7e1757690783171
+│   │   │   └── 42a5348db70cefc3a9970b776f73dba024f54b
+│   │   ├── 3a
+│   │   │   └── e1a3fbaf1eb91b4c0f86f44f2e0d30d35c877c
+│   │   ├── 3c
+│   │   │   └── 6f40108d5705ff374e5570825eae6b585ea0ee
+│   │   ├── 41
+│   │   │   └── 89fc58c1dc0a63dd1ab8f861c0cae6fc72d04a
+│   │   ├── 43
+│   │   │   └── 7aa166c6e856ea8d923716a3cde940f0f3bf42
+│   │   ├── 46
+│   │   │   ├── 1b60c6e02f64eadee6ff3d2f11853f24854449
+│   │   │   └── dc1a926277510d259b80f4c84692658288792e
+│   │   ├── 47
+│   │   │   └── 9275551b9aac7abd913999bd1dd929d960580c
+│   │   ├── 48
+│   │   │   └── e12a8544ec665bd5c6e4cfc0603fe50429be54
+│   │   ├── 49
+│   │   │   └── 84ea926e9100d4a6539e437cfc37f07839522b
+│   │   ├── 4b
+│   │   │   ├── 37cea994a0bc575248304981119857edb23a67
+│   │   │   └── 4122ca590520d7a0df190b0647741ffa3e1995
+│   │   ├── 4d
+│   │   │   └── e31fa42564624ccb7bdf08ee858cb6d3c89b13
+│   │   ├── 4e
+│   │   │   └── 30a15acd20bcedc54415c004383d08d86886f5
+│   │   ├── 51
+│   │   │   └── 393f3f5581520e53cedfa6bec65eeb3d62081a
+│   │   ├── 52
+│   │   │   └── 4e73c3da546777a057eabce00b0eea5bf77124
+│   │   ├── 54
+│   │   │   ├── 1826ba8247ec533881d88bd7d158c397442277
+│   │   │   └── fbf514f063be06fdde3a303c603065e545b832
+│   │   ├── 55
+│   │   │   └── df25c83cb4897ea8c70176f7e41be95bfc0308
+│   │   ├── 57
+│   │   │   └── 056a03025ac5341128582c6d9fba2da6ec8606
+│   │   ├── 58
+│   │   │   └── 9fcdad96a315af2f077c2f611e32491b6c7ad9
+│   │   ├── 64
+│   │   │   └── dbe21bf0d97d4f9e789cddcc204cd796d11ff5
+│   │   ├── 6e
+│   │   │   ├── 9d2fb88550256485f180e97ad9dee362d89f0b
+│   │   │   └── ee50a6fe2026938263ff3c558170d4bb022957
+│   │   ├── 71
+│   │   │   └── 72c38adbc0b521ea5b36edd38c0bf63ac0f23e
+│   │   ├── 72
+│   │   │   └── 56a91cbbee750d8b3320bbff81814e34ce21cd
+│   │   ├── 73
+│   │   │   └── 7b110e921f5a07151687292f6430fa02484db9
+│   │   ├── 75
+│   │   │   ├── 79f2c7106dab13c5adccd3f00089b792ea98c5
+│   │   │   └── 9f2938c4ab23b7b2476103b628f2f249173ffa
+│   │   ├── 76
+│   │   │   └── 9296b18f909b38490f3d368e76cc4cd785d745
+│   │   ├── 77
+│   │   │   └── f7c51558d702c3de997f5d09cf78de1635da5a
+│   │   ├── 7a
+│   │   │   ├── 57785275530081b7e1f29f6af9303d844aa624
+│   │   │   ├── 5b209de1acd1f435b29b00fe0157f20faa0b22
+│   │   │   └── ad18aa9f20e2be8c9fdff263717321fe6bbbb0
+│   │   ├── 7b
+│   │   │   └── ef74ef0a79684efc3a1594ee1bfad0571626b0
+│   │   ├── 7f
+│   │   │   └── fd333d7957884a7ee4020d745fbac26a308aa4
+│   │   ├── 81
+│   │   │   └── 2f4afa84103e2a475767468c8cb6fc8229e812
+│   │   ├── 82
+│   │   │   ├── 448500f7a53976dfdf4c85e28b97c4f60f2f7e
+│   │   │   └── 75a54a19db04d8b77092d67f9abca67d8d7905
+│   │   ├── 86
+│   │   │   ├── 22c26900202dc81d59dec6cf1c37925ee0c6f1
+│   │   │   └── 943c7e9e1e0df7fee6c164c7018ff54491bc61
+│   │   ├── 8a
+│   │   │   └── 714d8ff90b4eb5b8a00f8b21ad18ddd064dad2
+│   │   ├── 8b
+│   │   │   └── 459eb60a509a1d9784b84775138975b5062cd8
+│   │   ├── 8d
+│   │   │   ├── 233c6fc13422ca044acf91ed633ffdc4a713d5
+│   │   │   └── 3354ec734f55d748b9a85825bcec01abfbc819
+│   │   ├── 91
+│   │   │   └── 4c08100701d032502bea44da34a6a73e0f1802
+│   │   ├── 94
+│   │   │   └── 158114e123f3259126237c8d7113ccbfba25b5
+│   │   ├── 97
+│   │   │   └── 568d716d0cdebb40d15eb73559b186791c295d
+│   │   ├── 9b
+│   │   │   └── ef5fd98f3c1492e4383bdc80f9f9681c2e3343
+│   │   ├── 9d
+│   │   │   └── 17e004038afb6d6dcbbddc7fadc05badcca224
+│   │   ├── 9f
+│   │   │   └── 23a09ac5d7584711762a8b1d9ad08ac4784ea8
+│   │   ├── a1
+│   │   │   └── 5df7162f011751fcaa921ca77ad806bcf30105
+│   │   ├── a3
+│   │   │   └── a1fc7bd9c2fd4af82e29bd98b5c6e0af96c4ce
+│   │   ├── a5
+│   │   │   └── 9d1f365de163b266a3d1798fea17347e6d7aa2
+│   │   ├── a7
+│   │   │   └── 7e5863f01cc2ae1f4b38210b20f9607987ab80
+│   │   ├── af
+│   │   │   └── cf91c86fa92ce0022405b550db59a81dc10459
+│   │   ├── b4
+│   │   │   └── f77e3d55accfe8e6e046987773d0a258db2555
+│   │   ├── b6
+│   │   │   └── 1d16ec6b42e80b1316ae0097682c36c54f2cb9
+│   │   ├── ba
+│   │   │   └── 5f2fa12335c31c055ac74e578ba53c52bf3a76
+│   │   ├── c0
+│   │   │   ├── 4dd354e112686934129ce2093f16510ae7a772
+│   │   │   └── fdbdc0877ca6acca1cd3194b280a4df205bfcd
+│   │   ├── c4
+│   │   │   └── a35658b2886e70ef4205ad60292e5b084714e8
+│   │   ├── c9
+│   │   │   └── ed208d4f0d76b4d5509c26e16ec17c7680954c
+│   │   ├── cf
+│   │   │   └── bc57d9a4a10eb5dd90d7c4c5508db5e6506c59
+│   │   ├── d0
+│   │   │   └── b67de20a41fc1514b5beb160facf879abb22cd
+│   │   ├── d7
+│   │   │   └── f21a854ed5807fae8a66b906676b76d45f5281
+│   │   ├── db
+│   │   │   └── 6fc89cd893dc69ecb6f88e424f7c983a08af50
+│   │   ├── de
+│   │   │   └── 9ddb38d933d18a0ca6ccc571d0effc3eb5f260
+│   │   ├── df
+│   │   │   ├── a0f8c12acdb40678c0e2dddca6b40935ef5eb0
+│   │   │   └── afc4236dbeaed6718fe026d6223d9f74a072be
+│   │   ├── e2
+│   │   │   └── 7a9131129a5113c21fe8837e79fffb06c49ad6
+│   │   ├── e4
+│   │   │   └── fc14c8e12bb35236b9906afdc672a75fb47ff0
+│   │   ├── e8
+│   │   │   └── 52510963d4bcde3a50ec007690f7ba97a18890
+│   │   ├── e9
+│   │   │   └── f799e60cf6974ef969641e557408f3649ca8f5
+│   │   ├── ec
+│   │   │   ├── 9477b6386899d37b8dd4fe3303254d1547ec3d
+│   │   │   └── f5f6d1929204febd9cef0916ae99c53fd17fc5
+│   │   ├── ee
+│   │   │   └── 063b096c7b12f28e87dfb0ed3c88f47b163f85
+│   │   ├── f0
+│   │   │   └── dd47ffdd53c82ab5edb47f9d788cef3abeb0cf
+│   │   ├── f2
+│   │   │   ├── 3bc56f790e33b6eccc3f00ace726c02606851b
+│   │   │   └── 8fa957b44259f6264150f8b203515c714d3eb0
+│   │   ├── f3
+│   │   │   └── e1176114d23acc977353a1cb8ff05f606c9f55
+│   │   ├── f4
+│   │   │   └── 5fff6b5adb5217b0d3930d56e74fd9661df3a9
+│   │   ├── f6
+│   │   │   └── 6ce99f59c6a14582ff981fdad3bb309423ace8
+│   │   ├── f8
+│   │   │   └── 9f997e59acde61e41e63490f1a69c40d409284
+│   │   ├── fd
+│   │   │   ├── 48080568ffbd054d5c15821ea9693272c65548
+│   │   │   └── 4970ecfce8d00911a08a13aab805f2c616c971
+│   │   ├── ff
+│   │   │   └── 3c39d091b5296c30ba6e680acb15d0e3f6ffe3
+│   │   ├── info
+│   │   │   ├── commit-graph
+│   │   │   └── packs
+│   │   └── pack
+│   │       ├── pack-664f9bb50387fb5e3488a6f128f470749cb9b137.idx
+│   │       ├── pack-664f9bb50387fb5e3488a6f128f470749cb9b137.pack
+│   │       └── pack-664f9bb50387fb5e3488a6f128f470749cb9b137.rev
+│   ├── refs
+│   │   ├── heads
+│   │   │   └── main
+│   │   ├── remotes
+│   │   │   └── origin
+│   │   │       ├── HEAD
+│   │   │       └── main
+│   │   └── tags
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── HEAD
+│   ├── index
+│   └── packed-refs
+├── asignaturas
+│   ├── 1-comunicación_y_habilidades_digitales.html
+│   ├── 1-química_inorgánica.html
+│   ├── 1-química_orgánica.html
+│   ├── 2-biología_y_fisiología_celular.html
+│   ├── 2-física.html
+│   ├── 2-química_analítica.html
+│   ├── 3-bioquímica.html
+│   ├── 3-microbiología.html
+│   ├── 3-termodinámica_y_fisicoquímica.html
+│   ├── 4-biología_molecular.html
+│   ├── 4-inmunología.html
+│   ├── 4-tecnología_enzimática.html
+│   ├── 5-bioseguridad_e_higiene.html
+│   ├── 5-fundamentos_de_bioprocesos.html
+│   ├── 5-tópicos_de_biotecnología.html
+│   ├── 7-control_de_calidad.html
+│   ├── 7-diseño_de_experimentos.html
+│   ├── 7-fenómenos_de_transporte.html
+│   ├── 7-ingeniería_genética.html
+│   ├── 7-operaciones_unitarias.html
+│   ├── 8-bioinformática.html
+│   ├── 8-biotecnología_agropecuaria.html
+│   ├── 8-biotecnología_ambiental.html
+│   ├── 8-ingeniería_de_proyectos.html
+│   ├── 8-ingeniería_en_bioprocesos.html
+│   ├── 8-ingeniería_en_biorreactores.html
+│   ├── 9-biotecnología_en_alimentos.html
+│   ├── 9-biotecnología_médico_farmacéutica.html
+│   ├── 9-control_de_bioprocesos.html
+│   ├── 9-mejora_de_bioprocesos.html
+│   ├── 9-metabolismo_secundario.html
+│   └── components.html
+├── diapositivas
+│   ├── 1-Comunicación_y_habilidades_digitales
+│   │   └── 0_Main.tex
+│   ├── 1-Química_inorgánica
+│   │   ├── 01.bib
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 1-Química_orgánica
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 2-Biología_y_fisiología_celular
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 2-Física
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 2-Química_analítica
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 3-Bioquímica
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 3-Microbiología
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 3-Termodinámica_y_fisicoquímica
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 4-Biología_molecular
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 4-Inmunología
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 4-Tecnología enzimática
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 5-Fundamentos de bioprocesos
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 5-Tópicos de biotecnología
+│   │   ├── 0_Main.tex
+│   │   └── portada.jpg
+│   ├── 7-Control_de_calidad
+│   │   └── 0_Main.tex
+│   ├── 7-Diseño de experimentos
+│   │   └── 0_Main.tex
+│   ├── 7-Fenómenos_de_transporte
+│   │   └── 0_Main.tex
+│   ├── 7-Ingeniería_genética
+│   │   └── 0_Main.tex
+│   ├── 7-Operaciones_unitarias
+│   │   └── 0_Main.tex
+│   ├── 8-Bioinformática
+│   │   └── 0_Main.tex
+│   ├── 8-Biotecnología ambiental
+│   │   └── 0_Main.tex
+│   ├── 8-Biotecnología_agropecuaria
+│   │   └── 0_Main.tex
+│   ├── 8-Ingeniería_de_bioprocesos
+│   │   └── 0_Main.tex
+│   ├── 8-Ingeniería_de_biorreactores
+│   │   └── 0_Main.tex
+│   ├── 8-Ingeniería_de_proyectos
+│   │   └── 0_Main.tex
+│   ├── 9-Biotecnología médico-farmacéutica
+│   │   └── 0_Main.tex
+│   ├── 9-Biotecnología_en_alimentos
+│   │   └── 0_Main.tex
+│   ├── 9-Control_de_bioprocesos
+│   │   └── 0_Main.tex
+│   ├── 9-Mejora_de_bioprocesos
+│   │   └── 0_Main.tex
+│   ├── 9-Metabolismo_secundario
+│   │   └── 0_Main.tex
+│   ├── 0_Main.tex
+│   ├── logo_upsin.png
+│   ├── slide.cls
+│   └── tabla_base.tex
+├── manuales
+│   ├── 0 - Mapa Curricular.pdf
+│   ├── 1 - Biotecnología y desarrollo sostenible.pdf
+│   ├── 1 - Comunicación y habilidades digitales.pdf
+│   ├── 1 - Química inorgánica.pdf
+│   ├── 1-Química_orgánica.pdf
+│   ├── 2 - Biología y fisiología celular.pdf
+│   ├── 2 - Física.pdf
+│   ├── 2 - Probabilidad y estadística.pdf
+│   ├── 2 - Química analítica.pdf
+│   ├── 3 - Bioquímica.pdf
+│   ├── 3 - Microbiología.pdf
+│   ├── 3 - Termodinámica y fisicoquímica.pdf
+│   ├── 4 - Biología molecular.pdf
+│   ├── 4 - Inmunología.pdf
+│   ├── 4 - Tecnología enzimática.pdf
+│   ├── 5 - Ecuaciones diferenciales.pdf
+│   ├── 5 - Fundamentos de bioprocesos.pdf
+│   ├── 5 - Liderazgo de equipos de equipos de alto desempeño.pdf
+│   ├── 5 - Tópicos de biotecnología.pdf
+│   ├── 7 - Control de calidad.pdf
+│   ├── 7 - Diseño de experimentos.pdf
+│   ├── 7 - Fenómenos de transporte.pdf
+│   ├── 7 - Habilidades gerenciales.pdf
+│   ├── 7 - Ingeniería genética.pdf
+│   ├── 7 - Operaciones unitarias.pdf
+│   ├── 8 - Bioinformática.pdf
+│   ├── 8 - Biotecnología agropecuaria.pdf
+│   ├── 8 - Biotecnología ambiental.pdf
+│   ├── 8 - Ingeniería de bioprocesos.pdf
+│   ├── 8 - Ingeniería de biorreactores.pdf
+│   ├── 8 - Ingeniería de proyectos.pdf
+│   ├── 9 - Biotecnología en alimentos.pdf
+│   ├── 9 - Biotecnología médico-farmacéutica.pdf
+│   ├── 9 - Control de bioprocesos.pdf
+│   ├── 9 - Mejora de bioprocesos.pdf
+│   └── 9 - Metabolismo secundario.pdf
+├── resources
+│   ├── images
+│   │   ├── asignaturas_back.jpg
+│   │   ├── colab-back.jpg
+│   │   ├── externos_back.jpg
+│   │   ├── hero_background.jpg
+│   │   └── licencia_back.jpg
+│   ├── asignatura_template.html
+│   ├── page_template.html
+│   ├── proximamente_template.html
+│   └── yt_video_template.html
+├── resúmenes
+│   ├── 1-Comunicación_y_habilidades_digitales
+│   │   └── 0_Main.tex
+│   ├── 1-Química_inorgánica
+│   │   ├── images
+│   │   │   ├── afinidad_electrónica.png
+│   │   │   ├── electronegatividad.png
+│   │   │   ├── energía_de_ionización.png
+│   │   │   ├── masa_atómica.png
+│   │   │   └── radio_atómico.png
+│   │   ├── .bib
+│   │   ├── 02.tex
+│   │   ├── 06.tex
+│   │   ├── 09.tex
+│   │   ├── 09_clas_comps.tex
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 1-Química_orgánica
+│   │   ├── .bib
+│   │   ├── 04-diferencias_z_e.tex
+│   │   ├── 04.tex
+│   │   ├── 05.tex
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 2-Biología_y_fisiología_celular
+│   │   ├── .bib
+│   │   ├── 01-biomoléculas_funciones.tex
+│   │   ├── 01.tex
+│   │   ├── 02.tex
+│   │   ├── 05.tex
+│   │   ├── 09.tex
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   ├── 11.tex
+│   │   └── 13.tex
+│   ├── 2-Física
+│   │   ├── .bib
+│   │   ├── 01.tex
+│   │   ├── 01_magn_der.tex
+│   │   ├── 01_magn_fund.tex
+│   │   ├── 02.tex
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 2-Química_analítica
+│   │   ├── .bib
+│   │   ├── 04.tex
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 3-Bioquímica
+│   │   ├── images
+│   │   │   └── aminoácidos_canónicos.jpg
+│   │   ├── .bib
+│   │   ├── 01.tex
+│   │   ├── 04.tex
+│   │   ├── 04_anfoterismo_de_aminoácidos.tex
+│   │   ├── 04_pka_aminoácidos.tex
+│   │   ├── 06.tex
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── anexo_aminoácidos_canónicos.tex
+│   ├── 3-Microbiología
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 3-Termodinámica_y_fisicoquímica
+│   │   └── 0_Main.tex
+│   ├── 4-Biología_molecular
+│   │   ├── images
+│   │   │   ├── 04_dogma_central.png
+│   │   │   ├── 04_splicing_alternativo.png
+│   │   │   ├── 05_LAC_c_lac.png
+│   │   │   ├── 05_LAC_s_lac.png
+│   │   │   ├── 05_trp_c_trp.png
+│   │   │   ├── 05_trp_s_trp.png
+│   │   │   ├── 09_agarosa.png
+│   │   │   ├── 09_lab-electro.png
+│   │   │   ├── 09_labxchange.png
+│   │   │   ├── 09_pcr-electro.jpg
+│   │   │   ├── 09_pcr-method.png
+│   │   │   ├── 09_qpcr-graph.jpg
+│   │   │   ├── 09_qpcr-method.png
+│   │   │   ├── 09_rt-pcr-method.png
+│   │   │   ├── 09_rt-qpcr-method.png
+│   │   │   ├── 09_sybr.jpg
+│   │   │   ├── 09_taqman-1.jpg
+│   │   │   ├── 09_taqman-2.jpg
+│   │   │   ├── 09_taqman.jpg
+│   │   │   └── 09_veritasium.png
+│   │   ├── .bib
+│   │   ├── 03.tex
+│   │   ├── 04.tex
+│   │   ├── 05.tex
+│   │   ├── 09.tex
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 4-Inmunología
+│   │   └── 0_Main.tex
+│   ├── 4-Tecnología enzimática
+│   │   ├── images
+│   │   │   ├── graphs.jpg
+│   │   │   ├── inh-comp.jpg
+│   │   │   └── inh-no-comp.jpg
+│   │   ├── .bib
+│   │   ├── 04.tex
+│   │   ├── 05.tex
+│   │   ├── 07.tex
+│   │   ├── 08.tex
+│   │   ├── 09-valores_métodos_linearización.tex
+│   │   ├── 09.tex
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   └── 0_Slide.tex
+│   ├── 5-Fundamentos de bioprocesos
+│   │   ├── .bib
+│   │   ├── 01.tex
+│   │   ├── 03.tex
+│   │   ├── 03_comp_est_micro.tex
+│   │   ├── 05.tex
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 5-Tópicos de biotecnología
+│   │   ├── .bib
+│   │   ├── 02.tex
+│   │   ├── 02_comparar_biometrías.tex
+│   │   ├── 06.tex
+│   │   ├── 07.tex
+│   │   ├── 08.tex
+│   │   ├── 0_Main.pdf
+│   │   ├── 0_Main.tex
+│   │   ├── 10.tex
+│   │   └── 11.tex
+│   ├── 7-Control_de_calidad
+│   │   └── 0_Main.tex
+│   ├── 7-Diseño de experimentos
+│   │   ├── .bib
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 7-Fenómenos_de_transporte
+│   │   └── 0_Main.tex
+│   ├── 7-Ingeniería_genética
+│   │   └── 0_Main.tex
+│   ├── 7-Operaciones_unitarias
+│   │   └── 0_Main.tex
+│   ├── 8-Bioinformática
+│   │   └── 0_Main.tex
+│   ├── 8-Biotecnología ambiental
+│   │   ├── .bib
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 8-Biotecnología_agropecuaria
+│   │   └── 0_Main.tex
+│   ├── 8-Ingeniería_de_bioprocesos
+│   │   └── 0_Main.tex
+│   ├── 8-Ingeniería_de_biorreactores
+│   │   └── 0_Main.tex
+│   ├── 8-Ingeniería_de_proyectos
+│   │   └── 0_Main.tex
+│   ├── 9-Biotecnología médico-farmacéutica
+│   │   ├── .bib
+│   │   ├── 0_Main.pdf
+│   │   └── 0_Main.tex
+│   ├── 9-Biotecnología_en_alimentos
+│   │   └── 0_Main.tex
+│   ├── 9-Control_de_bioprocesos
+│   │   └── 0_Main.tex
+│   ├── 9-Mejora_de_bioprocesos
+│   │   └── 0_Main.tex
+│   ├── 9-Metabolismo_secundario
+│   │   └── 0_Main.tex
+│   ├── 0_Main.tex
+│   ├── summarie.cls
+│   └── tabla_base.tex
+├── asignaturas.html
+├── colaborar-forms.html
+├── colaborar.html
+├── components.html
+├── index.html
+├── licencia.html
+├── LICENSE
+├── README.md
+├── recursos-externos.html
+├── structure.txt
+├── styles.css
+└── sync_test.sh
