@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{malairuangHighCellDensity2020}
+\bibinfo{author}{Malairuang, K.}, \bibinfo{author}{Krajang, M.},
+  \bibinfo{author}{Sukna, J.}, \bibinfo{author}{Rattanapradit, K.} \&
+  \bibinfo{author}{Chamsart, S.}
+\newblock \bibinfo{title}{High {{Cell Density Cultivation}} of
+  {{Saccharomyces}} cerevisiae with {{Intensive Multiple Sequential Batches
+  Together}} with a {{Novel Technique}} of {{Fed-Batch}} at {{Cell Level}}
+  ({{FBC}})}.
+\newblock \emph{\bibinfo{journal}{Processes}} \textbf{\bibinfo{volume}{8}},
+  \bibinfo{pages}{1321} (\bibinfo{year}{2020}).
+
+\bibitem{somboonSimpleGreenMethod2022}
+\bibinfo{author}{Somboon, T.}, \bibinfo{author}{Phatchana, R.},
+  \bibinfo{author}{Tongpoothorn, W.} \& \bibinfo{author}{Sansuk, S.}
+\newblock \bibinfo{title}{A simple and green method for determination of
+  ethanol in liquors by the conductivity measurement of the uncatalyzed
+  esterification reaction}.
+\newblock \emph{\bibinfo{journal}{LWT}} \textbf{\bibinfo{volume}{154}},
+  \bibinfo{pages}{112593} (\bibinfo{year}{2022}).
+
+\bibitem{lopezComparacionMetodosQue2017}
+\bibinfo{author}{L{\'o}pez, X.}, \bibinfo{author}{Taramuel, A.},
+  \bibinfo{author}{Arboleda, C.}, \bibinfo{author}{Segura, F.} \&
+  \bibinfo{author}{Restrepo, L.}
+\newblock \bibinfo{title}{{Comparaci\'on de m\'etodos que utilizan \'acido
+  sulf\'urico para la determinaci\'on de az\'ucares totales}}.
+\newblock \emph{\bibinfo{journal}{Revista Cubana de Qu\'imica}}
+  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{180--198}
+  (\bibinfo{year}{2017}).
+
+\end{thebibliography}

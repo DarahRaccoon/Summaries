@@ -1,15 +1,21 @@
 \NeedsTeXFormat{LaTeX2e} 
 \ProvidesClass{Resume}
-\LoadClass[a4paper,11pt]{report}
+\LoadClass[a4paper,11pt,openany]{book}
 
-\RequirePackage[spanish,es-tabla]{babel}
+\RequirePackage[spanish,es-tabla,es-nodecimaldot]{babel}
 \RequirePackage{fontspec}
-\setmainfont{Libertinus Serif}
+\setmainfont{IBM Plex Serif}
 
 \RequirePackage{setspace}
 \setlength{\parindent}{0pt}
 
-\RequirePackage[top=2.5cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\RequirePackage[
+    top=2.5cm,
+    bottom=2.5cm,
+    inner=1.75cm,
+    outer=1.75cm,
+    footskip=1cm
+]{geometry}
 
 \RequirePackage{multicol}
 \setlength{\columnsep}{0.75cm}
@@ -20,7 +26,7 @@
 
 \RequirePackage{fancyhdr}
 
-\RequirePackage[bottom]{footmisc}
+\RequirePackage[bottom, multiple]{footmisc}
 
 \RequirePackage{graphicx}
 \RequirePackage{float}
@@ -59,9 +65,11 @@
 
 \RequirePackage{tikz,tcolorbox}
 
-\RequirePackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}
+\RequirePackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue, hyperfootnotes=false]{hyperref}
 
-\bibliographystyle{naturemag}
+\usepackage[sectionbib,globalcitecopy]{bibunits} 
+\defaultbibliographystyle{naturemag} 
+\defaultbibliography{main}
 
 \RequirePackage{lipsum}
 
@@ -85,25 +93,6 @@
     \thispagestyle{empty}
     \newpage
     \setcounter{page}{1}
-}
-
-\newcommand{\fancystyle}{
-    \fancypagestyle{part}{
-    \fancyhf{}
-    \fancyhead[L]{\Titulo}
-    \fancyhead[R]{\thepage}
-    }
-
-    \fancypagestyle{plain}{
-    \fancyhf{}
-    \fancyhead[L]{\Titulo}
-    \fancyhead[R]{\thepage}
-    }
-
-    \pagestyle{fancy}
-    \fancyhf{}
-    \fancyhead[L]{\Titulo}
-    \fancyhead[R]{\thepage}
 }
 
 \newcommand{\definition}[2]{
