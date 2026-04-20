@@ -1,6 +1,21 @@
-\section{Introducción a la PCR}
 
-La técnica de la reacción en cadena de la polimerasa (PCR, por \textit{Polymerase Chain Reaction}) es una técnica de la biología molecular desarrollada en 1983 por Kary Mullis. Su objetivo es obtener un gran número de copias de un fragmento de ADN particular, partiendo de un mínimo; en teoría basta partir de una sola copia de ese fragmento original, o molde, para crea una gran dcantidad de copias del mismo.
+La técnica de la reacción en cadena de la polimerasa, o PCR por sus siglas en inglés, (Polymerase Chain Reaction) es una técnica de biología molecular desarrollada en 1983 por Kary Mullis.
+
+Su objetivo es, a partir de una mínima cantidad de ADN, obtener un gran número de copias de un fragmento de ADN particular; en teoría basta partir de una sola copia de ese fragmento original, o molde, para crea una gran cantidad de copias del mismo.
+
+\section{Conceptos básicos de la PCR}
+
+\subsection{Clásica o punto final}
+
+Este método consiste unicamente en los pasos básicos de la PCR (Desnaturalización, alineación y elongación). Tiene la desventaja de necesitar un proceso posterior (electroforesis en gel) para poder cuantificar la cantidad de ADN obtenido. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\linewidth]{images/09_pcr-method.png}
+    \caption{Metodología de la PCR clásica}
+    \label{fig:pcr-method}
+\end{figure}
+
 
 \section{Reactivos, materiales y equipos utilizados para la PCR}
 
@@ -82,6 +97,10 @@ Respecto a los equipos, al igual que los materiales, suelen ser pocos y siempre 
     \item Centrífuga: Es utilizada para separar fases de la muestra.  
 \end{itemize}
 
+\section{Enzimas de restricción}
+
+
+
 \section{Ciclos de la PCR}
 
 La PCR funciona subiendo y bajando la temperatura de las muestras de ADN, esto para que ocurran las diferentes reacciones que permiten la generación de copias de ADN. Esto se compone de \textbf{3 pasos} que se repiten una y otra vez, y es lo que se conoce como \textbf{ciclo}.
@@ -111,28 +130,16 @@ Una vez separadas las hebras de ADN y que los primers se hubieran unido a este A
 
 Aquí se vuelve a aumentar la temperatura hasta \textbf{65-72°C} durante \textbf{1 minuto}.
 
-\section{Tipos de PCR}
+\section{Variantes de la PCR}
 
 Existen diferentes formas de realizar la PCR, sin embargo, el proceso de la PCR descrito anteriormente suele variar poco entre estos métodos. Los tipos de PCR principales son:
 
 \begin{itemize}
-    \item Clásica o punto final
     \item Tiempo real (qPCR)
     \item Retrotranscriptasa (RT-PCR)
     \item Combinación Retrotranscriptasa-Tiempo Real (RT-qPCR)
     \item Digital
 \end{itemize}
-
-\subsection{Clásica o punto final}
-
-Este método consiste unicamente en los pasos básicos de la PCR (Desnaturalización, alineación y elongación). Tiene la desventaja de necesitar un proceso posterior (electroforesis en gel) para poder cuantificar la cantidad de ADN obtenido. 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.65\linewidth]{images/09_pcr-method.png}
-    \caption{Metodología de la PCR clásica}
-    \label{fig:pcr-method}
-\end{figure}
 
 \subsection{Tiempo real (qPCR)}
 
@@ -228,7 +235,7 @@ Este método \textbf{no es tan exacto}, esto porque que este colorante se une a 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\linewidth]{images/09_sybr.jpg}
-    \caption{Funcionamiento del colorante SYBR-Green. Los círculos representan el SYBR-Green que \textbf{no emite luz}, mientras que las "estrellas" representa nel SYBR-Green que \textbf{ya emite luz}.}
+    \caption[Funcionamiento del colorante SYBR-Green]{Los círculos representan el SYBR-Green que \textbf{no emite luz}, mientras que las "estrellas" representa nel SYBR-Green que \textbf{ya emite luz}.}
     \label{fig:sybr-green}
 \end{figure}
 
@@ -241,12 +248,15 @@ Estas sondas, a comparación del SYBR Green, es \textbf{más específico}, pues 
 
 \begin{figure}[H]
     \centering
+    
     \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\linewidth]{images/09_taqman-1.jpg}
         \caption{La sonda se une al ADN y el reportero no puede emitir luz. La polimerasa inicia la elongación.}
         \label{fig:taqman-1}
     \end{subfigure}
+    
     \hspace{0.1\textwidth}
+    
     \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\linewidth]{images/09_taqman-2.jpg}
         \caption{La polimerasa retira y deshace a la sonda. El reportero ahora puede emitir luz}
@@ -261,23 +271,23 @@ Estas sondas, a comparación del SYBR Green, es \textbf{más específico}, pues 
 
 Se incluyen aquí algunos recursos que podrían ser de ayuda a conocer más sobre el tema.
 
-\begin{figure}[H]
+\begin{figure*}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/09_veritasium.png}
     \caption{\href{https://youtu.be/uqngf-0pPC4?si=TOr9xlx6f40MSp0E}{El hombre que tomó LSD y cambió el mundo - Veritasium}}
     \label{fig:veritasium}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[H]
+\begin{figure*}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/09_labxchange.png}
     \caption{\href{https://www.labxchange.org/library}{Biblioteca general de LabXChange}}
     \label{fig:labxchange}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[H]
+\begin{figure*}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/09_lab-electro.png}
     \caption{\href{https://goo.su/uhRz17V}{Simulador de electroforesis}}
     \label{fig:labxchange}
-\end{figure}
+\end{figure*}

@@ -1,41 +1,42 @@
 \documentclass{../summarie}
 
-\newcommand{\Titulo}{Química Inorgánica}
+\newcommand{\Titulo}{Resumen de asignatura: Química Inorgánica}
 \newcommand{\Fecha}{2026}
 
 \begin{document}
-\Portada
-\Indice
-\fancystyle
-\onehalfspacing
+
+\frontmatter
+
+    \Portada
+    \tableofcontents
+    \listoffigures
+    \listoftables
+
+\mainmatter
+
+    \onehalfspacing
+    \bibliographyunit[\chapter]
 
 % --------------------------------------------------------------------------------------- %
 
 \part{Principios básicos de química}
 
-    \chapter{Teoría atómica}
-        
-    \chapter{Propiedades físicas y químicas de la materia}
-        \input{02.tex}
-        
-    \chapter{Estados de agregación de la materia} 
-    \chapter{Buenas prácticas de laboratorio} 
-    \chapter{Manejo de sustancias químicas y equipo de laboratorio}
-    \chapter{Mezclas químicas, propiedades y soluciones}
-        \input{06.tex}
-        
-    \chapter{Clasificación de contaminantes inorgánicos}
+    \chapter{Teoría atómica} \input{01.tex}    
+    \chapter{Propiedades físicas y químicas de la materia} \input{02.tex}
+    \chapter{Estados de agregación de la materia} \input{03.tex}
+    \chapter{Buenas prácticas de laboratorio} \input{04.tex}
+    \chapter{Manejo de sustancias químicas y equipo de laboratorio} \input{05.tex}
+    \chapter{Mezclas químicas, propiedades y soluciones} \input{06.tex}
+    \chapter{Clasificación de contaminantes inorgánicos} \input{07.tex}
 
 \part{Nomenclatura de compuestos químicos y estequiometría}
 
-    \chapter{Tabla periódica y propiedades de los elementos}
-    \chapter{Introducción a la nomenclatura de compuestos inorgánicos}
-        \input{09.tex}
-        
-    \chapter{Reacciones químicas y estequiometría}
+    \chapter{Tabla periódica y propiedades de los elementos} \input{08.tex}
+    \chapter{Introducción a la nomenclatura de compuestos inorgánicos} \input{09.tex}
+    \chapter{Reacciones químicas y estequiometría} \input{10.tex}
 
 % -------------------------------- BIBLIOGRAFÍA ---------------------------------------- %
 
-\newpage \bibliography{bib}
+\backmatter
 
 \end{document}

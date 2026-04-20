@@ -4,44 +4,44 @@
 \newcommand{\Fecha}{2026}
 
 \begin{document}
-\Portada
-\Indice
-\fancystyle
-\onehalfspacing
+
+\frontmatter
+
+    \Portada
+    \tableofcontents
+    \listoffigures
+    \listoftables
+
+\mainmatter
+    
+    \onehalfspacing
+    \bibliographyunit[\chapter]
 
 % --------------------------------------------------------------------------------------------------- %
 
 \part{Introducción a la herencia}
 
-    \chapter{Genética mendeliana}
-    \chapter{Genética no mendeliana}
+    \chapter{Genética mendeliana} \input{01.tex}
+    \chapter{Genética no mendeliana} \input{02.tex}
 
 \part{Flujo genético}
 
-    \chapter{Replicación del ADN}
-        \input{03.tex}
-
-    \chapter{Expresión génica}
-        \input{04.tex}
+    \chapter{Replicación del ADN} \input{03.tex}
+    \chapter{Expresión génica} \input{04.tex}
 
 \part{Regulación y reparación de genes}
 
-    \chapter{Mecanismos de regulación genética en procariontes y eucariontes}
-        \input{05.tex}
-    
-    \chapter{Mutaciones}
-    \chapter{Mecanismos de reparación}
+    \chapter{Mecanismos de regulación genética en procariontes y eucariontes} \input{05.tex}
+    \chapter{Mutaciones} \input{06.tex}
+    \chapter{Mecanismos de reparación} \input{07.tex}
 
 \part{Amplificación de ácidos nucléicos}
 
-    \chapter{Técnicas de extracción y análisis de ácidos nucléicos}
-    \chapter{PCR y sus tipos}
-        \input{09.tex}
+    \chapter{Técnicas de extracción y análisis de ácidos nucléicos} \input{08.tex}
+    \chapter{PCR y sus tipos} \input{09.tex}
 
-% --- BIBLIOGRAFÍA --- %
+% --------------------------------------------------------------------------------------------------- %
 
-\newpage
-
-\bibliography{bib}
+\backmatter
 
 \end{document}
