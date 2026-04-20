@@ -400,7 +400,7 @@ a {
 .header {
     background-color: var(--color-white);
     box-shadow: var(--shadow-sm);
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 1000;
     padding: 0.5rem 0;
@@ -426,6 +426,7 @@ a {
 }
 
 /* ===== NAVEGACIÓN ===== */
+
 .nav__list {
     display: flex;
     list-style: none;
