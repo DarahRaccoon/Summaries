@@ -57,34 +57,44 @@
             </div>
         </div>
 
-        <!-- SECCIÓN: RESUMEN DE ASIGNATURA -->
-        <section id="resumen" class="section section-light">
+        <!-- SECCIÓN: RESUMEN Y DIAPOS -->
+
+        <section id="resumen_y_diapos" class="section section-light">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-header__title"><i class="fas fa-file-pdf" style="color: var(--color-primary);"></i> Resumen de la asignatura</h2>
-                    <p class="section-header__subtitle">Este resumen cubre todos los temas vistos a través de la materia y busca servir como material de consulta para alumnos y guía para docentes.<br> Última actualización: Marzo de 2026.</p>
+                    <h2 class="section-header__title"><i class="fa-solid fa-person-chalkboard" style="color: var(--color-primary);"></i> Resúmen y diapositivas</h2>
+                    <p class="section-header__subtitle">Estos documentos recopilan los temas vistos durante la asignatura, así como recursos de apoyo extra.</p>
                 </div>
 
-                <!-- Contenido sin tarjeta, ancho completo -->
-                <div style="max-width: 1000px; margin: 0 auto;">
-                    <div style="text-align: center; margin-bottom: 1.5rem;">
-                        <!-- Botón de descarga -->
-                        <div style="text-align: center; margin-bottom: 2.5rem;">
+                <div class="grid grid--auto-fit">
+
+                    <div class="card">
+                        <h3 class="card__title"><i class="fas fa-file-pdf" style="color: var(--color-primary);"></i> Resumen de la asignatura</h3>
+                        <p class="card__text">Este resumen cubre todos los temas vistos a través de la materia y busca servir como material de consulta para alumnos y guía para docentes</p>
+                        <div class="card__footer">
+                            <a href="../resúmenes/1-Química_inorgánica/0_Main.pdf" class="btn btn--secondary" target="_blank" download>
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
                             <a href="../resúmenes/1-Química_inorgánica/0_Main.pdf" class="btn btn--primary" target="_blank">
-                                <i class="fas fa-download"></i> Descargar resumen
+                                <i class="fa-solid fa-door-open"></i> Abrir
                             </a>
                         </div>
                     </div>
+
+                    <div class="card">
+                        <h3 class="card__title"><i class="fa-solid fa-chalkboard-user" style="color: var(--color-primary);"></i> Diapositivas</h3>
+                        <p class="card__text">Diapositivas que recopilan los temas más relevantes de la asignatura de manera más concisa.</p>
                     
-                    <!-- Vista previa desplegable -->
-                    <details style="border: 1px solid var(--color-gray-dark); border-radius: var(--border-radius); background-color: var(--color-white);">
-                        <summary style="padding: 1.2rem; cursor: pointer; background-color: var(--color-gray); border-radius: var(--border-radius); font-weight: 600; color: var(--color-secondary);">
-                            <i class="fas fa-eye"></i> Vista previa del documento
-                        </summary>
-                        <div style="padding: 1.5rem;">
-                            <embed src="../resúmenes/1-Química_inorgánica/0_Main.pdf" type="application/pdf" width="100%" height="600px" style="display: block; border-radius: var(--border-radius);"/>
+                        <div class="card__footer">
+                            <a href="../diapositivas/1-Química_inorgánica/0_Main.pdf" class="btn btn--secondary" target="_blank" download>
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                            <a href="../diapositivas/1-Química_inorgánica/0_Main.pdf" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Abrir
+                            </a>
                         </div>
-                    </details>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -99,62 +109,20 @@
 
                 <!-- Contenido sin tarjeta, ancho completo -->
                 <div style="max-width: 1000px; margin: 0 auto;">
-                    <div style="text-align: center; margin-bottom: 1.5rem;">                        
+                    <div style="text-align: center;">                        
                         <!-- Botón de descarga -->
-                        <div style="text-align: center; margin-bottom: 2.5rem;">
+                        <div style="text-align: center;">
                             <a href="../manuales/1 - Química inorgánica.pdf" class="btn btn--primary" target="_blank">
                                 <i class="fas fa-download"></i> Descargar manual
                             </a>
                         </div>
                     </div>
-                    
-                    <!-- Vista previa desplegable -->
-                    <details style="border: 1px solid var(--color-gray-dark); border-radius: var(--border-radius); background-color: var(--color-white);">
-                        <summary style="padding: 1.2rem; cursor: pointer; background-color: var(--color-gray); border-radius: var(--border-radius); font-weight: 600; color: var(--color-secondary);">
-                            <i class="fas fa-eye"></i> Vista previa del documento
-                        </summary>
-                        <div style="padding: 1.5rem;">
-                            <embed src="../manuales/1 - Química inorgánica.pdf" type="application/pdf" width="100%" height="600px" style="display: block; border-radius: var(--border-radius);"/>
-                        </div>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: DIAPOSITIVAS -->
-        <section id="diapositivas" class="section section-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-header__title"><i class="fa-solid fa-chalkboard-user" style="color: var(--color-primary);"></i> Diapositivas de la asignatura</h2>
-                    <p class="section-header__subtitle">Diapositivas que recopilan los temas más relevantes de la asignatura.</p>
-                </div>
-
-                <!-- Contenido sin tarjeta, ancho completo -->
-                <div style="max-width: 1000px; margin: 0 auto;">
-                    <div style="text-align: center; margin-bottom: 1.5rem;">                       
-                        <!-- Botón de descarga -->
-                        <div style="text-align: center; margin-bottom: 2.5rem;">
-                            <a href="../diapositivas/1-Química_inorgánica/0_Main.pdf" class="btn btn--primary" target="_blank">
-                                <i class="fas fa-download"></i> Descargar diapositivas
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Vista previa desplegable -->
-                    <details style="border: 1px solid var(--color-gray-dark); border-radius: var(--border-radius); background-color: var(--color-white);">
-                        <summary style="padding: 1.2rem; cursor: pointer; background-color: var(--color-gray); border-radius: var(--border-radius); font-weight: 600; color: var(--color-secondary);">
-                            <i class="fas fa-eye"></i> Vista previa del documento
-                        </summary>
-                        <div style="padding: 1.5rem;">
-                            <embed src="../diapositivas/1-Química_inorgánica/0_Main.pdf" type="application/pdf" width="100%" height="600px" style="display: block; border-radius: var(--border-radius);"/>
-                        </div>
-                    </details>
                 </div>
             </div>
         </section>
 
         <!-- SECCIÓN: VIDEOS -->
-        <section id="videos" class="section section-gray">
+        <section id="videos" class="section section-light">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-header__title"><i class="fab fa-youtube" style="color: var(--color-primary);"></i> Videos explicativos</h2>
@@ -267,7 +235,8 @@
         </section>
 
         <!-- SECCIÓN: RECURSOS EXTRA -->
-        <section id="recursos-extra" class="section section-light">
+
+        <section id="recursos-extra" class="section section-gray">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-header__title"><i class="fas fa-paperclip" style="color: var(--color-primary);"></i> Recursos extra</h2>
@@ -276,31 +245,32 @@
 
                 <!-- Grid de recursos -->
                 <div class="grid grid--auto-fit">
-                    <!-- Artículos/Papers -->
-                    <article class="card">
-                        <div class="card__icon">
-                            <i class="fas fa-scroll"></i>
-                        </div>
-                        <h3 class="card__title">Artículos recomendados</h3>
-                        <ul style="list-style: none; margin-bottom: 1.5rem; text-align: left;">
-                            <li style="margin-bottom: 0.5rem;">📄 <a href="#" target="_blank">Química inorgánica: conceptos fundamentales</a></li>
-                            <li style="margin-bottom: 0.5rem;">📄 <a href="#" target="_blank">Tabla periódica: historia y tendencias</a></li>
-                            <li style="margin-bottom: 0.5rem;">📄 <a href="#" target="_blank">Aplicaciones de compuestos inorgánicos en biotecnología</a></li>
-                        </ul>
-                    </article>
 
                     <!-- Ejercicios/Prácticas -->
+
                     <article class="card">
                         <div class="card__icon">
                             <i class="fas fa-pencil-alt"></i>
                         </div>
-                        <h3 class="card__title">Ejercicios y prácticas</h3>
-                        <ul style="list-style: none; margin-bottom: 1.5rem; text-align: left;">
-                            <li style="margin-bottom: 0.5rem;">✏️ <a href="#" target="_blank">Guía de ejercicios: configuración electrónica</a></li>
-                            <li style="margin-bottom: 0.5rem;">✏️ <a href="#" target="_blank">Guía de ejercicios: nomenclatura</a></li>
-                            <li style="margin-bottom: 0.5rem;">🔬 <a href="#" target="_blank">Práctica: identificación de compuestos</a></li>
+                        <h3 class="card__title" style="margin-bottom: 1.5rem;">Ejercicios y prácticas</h3>
+                        <ul style="list-style: none; text-align: left;">
+                            <li style="margin-bottom: 0.75rem;"><a href="https://www.labxchange.org/library/items/lb:LabXchange:5d12867d:lx_simulation:1" target="_blank"><i class="fa-solid fa-microscope"></i> Simulador: Electroforesis en gel</a></li>
+                            <!-- <li style="margin-bottom: 0.75rem;"><a href="#" target="_blank"><i class="fa-solid fa-pen"></i> Guía de ejercicios: </a></li> -->
                         </ul>
                     </article>
+
+                    <!-- Artículos/Papers -->
+
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3 class="card__title" style="margin-bottom: 1.5rem;">Artículos recomendados</h3>
+                        <ul style="list-style: none; margin-bottom: 1.5rem; text-align: left;">
+
+                        </ul>
+                    </article>
+
                 </div>
             </div>
         </section>
