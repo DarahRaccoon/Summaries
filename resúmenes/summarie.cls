@@ -67,9 +67,8 @@
 
 \RequirePackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue, hyperfootnotes=false]{hyperref}
 
-\usepackage[sectionbib,globalcitecopy]{bibunits} 
-\defaultbibliographystyle{naturemag} 
-\defaultbibliography{main}
+\usepackage[superscript,biblabel]{cite}
+\bibliographystyle{unsrt}
 
 \RequirePackage{lipsum}
 

@@ -3,10 +3,10 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: bu4.aux
 The style file: naturemag.bst
 I found no \citation commands---while reading file bu4.aux
-Database file #1: main.bib
+Database file #1: Main.bib
 You've used 0 entries,
             2348 wiz_defined-function locations,
-            975 strings with 8717 characters,
+            975 strings with 8721 characters,
 and the built_in function-call counts, 28 in all, are:
 = -- 0
 > -- 0
